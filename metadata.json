@@ -1,0 +1,6 @@
+{
+  "name": "FutureMe AI",
+  "description": "Meet the future version of yourself before it becomes reality with AI simulation and life navigation dashboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

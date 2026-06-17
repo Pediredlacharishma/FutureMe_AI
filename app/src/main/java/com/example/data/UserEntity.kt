@@ -19,5 +19,16 @@ data class UserEntity(
     val learningPath: List<RoadmapStep> = emptyList(),
     val futureGuideChats: List<ChatMessage> = emptyList(),
     val shadowSelfChats: List<ChatMessage> = emptyList(),
-    val weeklyHistory: List<WeeklyProgressItem> = emptyList()
+    val weeklyHistory: List<WeeklyProgressItem> = emptyList(),
+    val personalLegend: String = "",
+    val commitments: List<UserCommitment> = emptyList(),
+    val journalEntries: List<JournalEntry> = emptyList(),
+    val bookOfYouChapters: List<BookChapter> = emptyList(),
+    val realityCheckReports: List<RealityCheckReport> = emptyList(),
+    val alternateFutures: List<AlternateFuture> = emptyList(),
+    val timeCapsules: List<TimeCapsule> = emptyList(),
+    val futureMoments: List<FutureMoment> = emptyList(),
+    val mirrorReflections: List<MirrorReflection> = emptyList(),
+    val activeChallenges: List<FutureSelfChallenge> = emptyList()
 )
+

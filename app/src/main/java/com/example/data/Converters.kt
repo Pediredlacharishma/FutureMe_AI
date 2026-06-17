@@ -92,4 +92,131 @@ class Converters {
         val type = Types.newParameterizedType(List::class.java, WeeklyProgressItem::class.java)
         return moshi.adapter<List<WeeklyProgressItem>>(type).fromJson(value)
     }
+
+    @TypeConverter
+    fun fromUserCommitmentList(value: List<UserCommitment>?): String? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, UserCommitment::class.java)
+        return moshi.adapter<List<UserCommitment>>(type).toJson(value)
+    }
+
+    @TypeConverter
+    fun toUserCommitmentList(value: String?): List<UserCommitment>? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, UserCommitment::class.java)
+        return moshi.adapter<List<UserCommitment>>(type).fromJson(value)
+    }
+
+    @TypeConverter
+    fun fromJournalEntryList(value: List<JournalEntry>?): String? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, JournalEntry::class.java)
+        return moshi.adapter<List<JournalEntry>>(type).toJson(value)
+    }
+
+    @TypeConverter
+    fun toJournalEntryList(value: String?): List<JournalEntry>? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, JournalEntry::class.java)
+        return moshi.adapter<List<JournalEntry>>(type).fromJson(value)
+    }
+
+    @TypeConverter
+    fun fromBookChapterList(value: List<BookChapter>?): String? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, BookChapter::class.java)
+        return moshi.adapter<List<BookChapter>>(type).toJson(value)
+    }
+
+    @TypeConverter
+    fun toBookChapterList(value: String?): List<BookChapter>? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, BookChapter::class.java)
+        return moshi.adapter<List<BookChapter>>(type).fromJson(value)
+    }
+
+    @TypeConverter
+    fun fromRealityCheckList(value: List<RealityCheckReport>?): String? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, RealityCheckReport::class.java)
+        return moshi.adapter<List<RealityCheckReport>>(type).toJson(value)
+    }
+
+    @TypeConverter
+    fun toRealityCheckList(value: String?): List<RealityCheckReport>? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, RealityCheckReport::class.java)
+        return moshi.adapter<List<RealityCheckReport>>(type).fromJson(value)
+    }
+
+    @TypeConverter
+    fun fromAlternateFutureList(value: List<AlternateFuture>?): String? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, AlternateFuture::class.java)
+        return moshi.adapter<List<AlternateFuture>>(type).toJson(value)
+    }
+
+    @TypeConverter
+    fun toAlternateFutureList(value: String?): List<AlternateFuture>? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, AlternateFuture::class.java)
+        return moshi.adapter<List<AlternateFuture>>(type).fromJson(value)
+    }
+
+    @TypeConverter
+    fun fromTimeCapsuleList(value: List<TimeCapsule>?): String? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, TimeCapsule::class.java)
+        return moshi.adapter<List<TimeCapsule>>(type).toJson(value)
+    }
+
+    @TypeConverter
+    fun toTimeCapsuleList(value: String?): List<TimeCapsule>? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, TimeCapsule::class.java)
+        return moshi.adapter<List<TimeCapsule>>(type).fromJson(value)
+    }
+
+    @TypeConverter
+    fun fromFutureMomentList(value: List<FutureMoment>?): String? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, FutureMoment::class.java)
+        return moshi.adapter<List<FutureMoment>>(type).toJson(value)
+    }
+
+    @TypeConverter
+    fun toFutureMomentList(value: String?): List<FutureMoment>? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, FutureMoment::class.java)
+        return moshi.adapter<List<FutureMoment>>(type).fromJson(value)
+    }
+
+    @TypeConverter
+    fun fromMirrorReflectionList(value: List<MirrorReflection>?): String? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, MirrorReflection::class.java)
+        return moshi.adapter<List<MirrorReflection>>(type).toJson(value)
+    }
+
+    @TypeConverter
+    fun toMirrorReflectionList(value: String?): List<MirrorReflection>? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, MirrorReflection::class.java)
+        return moshi.adapter<List<MirrorReflection>>(type).fromJson(value)
+    }
+
+    @TypeConverter
+    fun fromFutureSelfChallengeList(value: List<FutureSelfChallenge>?): String? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, FutureSelfChallenge::class.java)
+        return moshi.adapter<List<FutureSelfChallenge>>(type).toJson(value)
+    }
+
+    @TypeConverter
+    fun toFutureSelfChallengeList(value: String?): List<FutureSelfChallenge>? {
+        if (value == null) return null
+        val type = Types.newParameterizedType(List::class.java, FutureSelfChallenge::class.java)
+        return moshi.adapter<List<FutureSelfChallenge>>(type).fromJson(value)
+    }
 }
+
